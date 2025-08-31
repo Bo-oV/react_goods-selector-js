@@ -16,7 +16,7 @@ export const goods = [
 ];
 
 export const App = () => {
-  const [selectedGood, setSelectedGood] = useState('');
+  const [selectedGood, setSelectedGood] = useState('Jam');
 
   return (
     <main className="section container">
@@ -74,17 +74,6 @@ export const App = () => {
               </td>
             </tr>
           ))}
-          <tr data-cy="Good">
-            <td>
-              <button data-cy="AddButton" type="button" className="button">
-                +
-              </button>
-            </td>
-
-            <td data-cy="GoodTitle" className="is-vcentered">
-              Dumplings
-            </td>
-          </tr>
         </tbody>
       </table>
     </main>
